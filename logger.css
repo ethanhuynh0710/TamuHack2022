@@ -11,6 +11,11 @@ html,body,.container {
   background-color: #e3e3e3;
 }
 
+.parent {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
 /* *,
 *:before,
 *:after {

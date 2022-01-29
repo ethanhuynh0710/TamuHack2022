@@ -17,16 +17,23 @@
      
   </head>
   <body>
-    <label for="input_image">Choose an Image File:</label>
-        <input type="file" id="input_image" name="input_image" onchange="handleInputChange()"/>
-        <br />
-        <br />
-        <textarea id="image-text"></textarea>
-		<br/><br/>
-		<progress id="progressbar" min="0" max="1" value="0"></progress>
+    <div id="header"></div>
+    <div class="parent">
+      <div id="sidebarJank"></div>
+      <div class="yz-stuff">
+        <label for="input_image">Choose an Image File:</label>
+            <input type="file" id="input_image" name="input_image" onchange="handleInputChange()"/>
+            <br />
+            <br />
+            <textarea id="image-text"></textarea>
         <br/><br/>
-        <textarea id="total-text"></textarea>
-    </body>
+        <progress id="progressbar" min="0" max="1" value="0"></progress>
+            <br/><br/>
+            <textarea id="total-text"></textarea>
+      </div>    
+      </div>
+  </body>
+  
 	<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
     <script src="ocr.js"></script>
   </body>

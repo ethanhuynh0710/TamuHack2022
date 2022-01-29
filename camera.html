@@ -9,17 +9,23 @@
             crossorigin="anonymous"></script>
         <script> 
             $(function(){
-            $('#header').load('header.html'); 
+                $('#header').load('header.html'); 
+                $('#sidebarJank').load('sidebarJank.html'); 
             })
         </script> 
     </head>
 
     <body>
         <div id="header"></div>
-        <center>
-            <video id="player" controls autoplay></video>
-            <canvas id="snapshot" width=320 height=240></canvas>
-        </center>
-        <center><button id="capture">Capturar</button></center>
+        <div class="parent">
+            <div id="sidebarJank"></div>
+            <div class="camera-stuff">
+                <center>
+                    <video id="player" controls autoplay></video>
+                    <canvas id="snapshot" width=320 height=240></canvas>
+                </center>
+                <center><button id="capture">Capturar</button></center>
+            </div>
+        </div>
     </body>
 </html>
