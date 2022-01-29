@@ -1,0 +1,53 @@
+<!--Log your expenses Date, Type, Item name, Price-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script> 
+    $(function(){
+      $('#header').load('header.html');
+      $('#sidebarJank').load('sidebarJank.html');  
+    })
+    </script> 
+    <link rel = "stylesheet" href = "logger.css">
+      <title>Logger</title>
+     
+  </head>
+  <body>
+    <script src="logger.js"></script>
+
+    <div id="header"></div>
+    <div class="parent">
+      <div class="container">
+          <form action="/add" method="POST">
+              <label for="date">Date:</label><br>
+              <input type="date" id="date" name="Date"><br><br>
+
+              <label for="type"> Type:</label><br>
+              <select id="type" name="Type"><br>
+              <option value="housing">Housing</option>
+              <option value="housing">Groceries</option>
+              <option value="housing">Transportation</option>
+              <option value="housing">Education</option>
+              <option value="housing">Other</option>
+              </select>
+              <br><br><br><br>
+
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="Name"><br><br>
+
+              <label for="price"> Price:</label><br>
+              <input type="text" id="price" name="Price"><br><br><br>
+
+              <input type="submit" value="Add Transaction" onclick="formSubmitted()">
+          </form>
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

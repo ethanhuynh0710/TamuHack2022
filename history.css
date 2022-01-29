@@ -1,0 +1,19 @@
+.parent {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+html,body,.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+}
+.list{
+text-align:center;
+}

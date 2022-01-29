@@ -1,0 +1,38 @@
+<!--The Main Page-->
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset = "utf-8">
+        <title>FINC</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+        <script> 
+            $(function(){
+                $('#header').load('header.html'); 
+                $('#sidebarJank').load('sidebarJank.html'); 
+            })
+        </script> 
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class = "parent">
+            <div id="sidebarJank"></div>
+            <div class = "content child">
+                <div class = "summary-container">
+                    <center><h3>Account Summary</h3></center>
+                </div>
+                <div class = "balance info-container">
+                    <h3> Balance</h3>
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+    
+</html>

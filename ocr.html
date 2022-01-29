@@ -1,0 +1,33 @@
+<!--Log your expenses Date, Type, Item name, Price-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script> 
+    $(function(){
+      $('#header').load('header.html'); 
+      $('#sidebarJank').load('sidebarJank.html'); 
+    })
+    </script> 
+    <link rel = "stylesheet" href = "logger.css">
+      <title>Test</title>
+     
+  </head>
+  <body>
+    <label for="input_image">Choose an Image File:</label>
+        <input type="file" id="input_image" name="input_image" onchange="handleInputChange()"/>
+        <br />
+        <br />
+        <textarea id="image-text"></textarea>
+		<br/><br/>
+		<progress id="progressbar" min="0" max="1" value="0"></progress>
+        <br/><br/>
+        <textarea id="total-text"></textarea>
+    </body>
+	<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+    <script src="ocr.js"></script>
+  </body>
+</html>
