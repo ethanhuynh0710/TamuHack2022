@@ -2,6 +2,7 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 <head>
+  <script type = "module" src = "login.js"></script>
     <link rel="stylesheet" href="login.css">
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -21,7 +22,7 @@
    
     
 
-    <input type="text" class="text" name="username">
+    <input type="text" class="text" id="username" name="username">
      <span>username</span>
 
     <br>
@@ -35,7 +36,7 @@
     <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" />
     <label for="checkbox-1-1">Keep me Signed in</label>
     
-    <button class="signin" onclick = "location.href='main.html'" type="button">
+    <button class="signin" id = "signin" onclick = "storeUsername()" type="button">
       Sign In
     </button>
 

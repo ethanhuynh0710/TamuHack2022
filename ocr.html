@@ -20,21 +20,31 @@
     <div id="header"></div>
     <div class="parent">
       <div id="sidebarJank"></div>
-      <div class="yz-stuff">
-        <label for="input_image">Choose an Image File:</label>
-            <input type="file" id="input_image" name="input_image" onchange="handleInputChange()"/>
-            <br />
-            <br />
-            <textarea id="image-text"></textarea>
-        <br/><br/>
-        <progress id="progressbar" min="0" max="1" value="0"></progress>
+        <div class="yz-stuff container">
+          <center><label for="input_image">Choose an Image of a Receipt:</label>
+            <div class="center-this file-submit-container">
+              <input type="file" id="input_image" name="input_image" onchange="handleInputChange()">
+            </div>
+            <progress id="progressbar" min="0" max="1" value="0"></progress>
             <br/><br/>
-            <textarea id="total-text"></textarea>
-      </div>    
+            <div class="read-container">
+              
+              <!-- <textarea readonly id="image-text" placeholder="Receipt Text"></textarea>
+              <br/><br/> -->
+              
+              <textarea readonly id="name-text" placeholder="Name"></textarea>
+              <br/><br/>
+              
+              <textarea readonly id="total-text" placeholder="Price"></textarea>
+              <br/><br/>
+             
+              <textarea readonly id="date-text" placeholder="Date"></textarea>
+            </div>
+        </div>    
       </div>
   </body>
   
-	<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+	<script src='https://unpkg.com/tesseract.js@v2.0.0-alpha.13/dist/tesseract.min.js'></script>
     <script src="ocr.js"></script>
   </body>
 </html>

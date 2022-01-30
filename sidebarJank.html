@@ -2,12 +2,16 @@
 <link rel = "stylesheet" href = "sidebarJank.css">
 <div class = "sidebar child">
     <center>
+        <script>
+             document.getElementById("username").innerHTML="Welcome, "+localStorage.username;
+        </script>
         <img src="hackathonchad.jpg" class = "profile_image" alt="">
-        <h4>Name</h4>
+        <h4 id = "username">Name</h4>
     </center>
     <!--to add more tabs:-->
-    <a href = "main.html"><i class = "fas fa-desktop"></i><span>Dashboard</span></a>
-    <a href = "history.html"><i class="fas fa-history"></i><span>Expenditure History</span></a>
+    
+    <a href = "main.html"><i class="fas fa-history"></i><span>Dashboard</span></a>
+    <a href = "history.html"><i class = "fas fa-desktop"></i><span>Expenditure History</span></a>
     <a href = "logger.html"><i class="fas fa-th-list"></i><span>Log Expenses</span></a>
     <a href = "camera.html"><i class="fas fa-camera"></i><span>Camera</span></a>
     <a href = "ocr.html"><i class="fas fa-receipt"></i><span>Upload Receipt</span></a>

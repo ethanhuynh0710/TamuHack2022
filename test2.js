@@ -13,10 +13,14 @@ var player = document.getElementById('player');
     context.drawImage(player, 0, 0, snapshotCanvas.width,
         snapshotCanvas.height);
     console.log(context.canvas.toDataURL());
-    var image = context.canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
-    window.location.href=image; // it will save locally
+    var link = document.createElement('a');
+    link.download = 'filename.png';
+    link.href = document.getElementById('snapshot').toDataURL()
+    link.click();
     
   });
+
+
 
   navigator.mediaDevices.getUserMedia({video: true})
       .then(handleSuccess);

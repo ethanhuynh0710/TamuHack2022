@@ -3,6 +3,7 @@ html,body,.container {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #5e7374;
   }
 
 body{
@@ -11,6 +12,25 @@ body{
 .parent {
   display: grid;
   grid-template-columns: 20% 80%;
+}
+.even-split{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px;
+}
+.camera-stuff{
+  margin-top: 20px;
+}
+.display-container{
+
+}
+.capture-container{
+  
+}
+#capture{
+  width:50%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .list{
   text-align:center;

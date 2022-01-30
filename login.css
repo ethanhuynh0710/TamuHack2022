@@ -1,10 +1,12 @@
 body,
 .signin {
-  background-color: #d3d3d3;
+  background-color: #5e7374;
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   letter-spacing: 1px;
+  font-weight: 900;
+  filter: brightness(90%)
 }
 
 .login {
@@ -13,7 +15,8 @@ body,
   width: 405px;
   margin: auto;
   padding: 60px 60px;
-  background: url(https://picsum.photos/id/1004/5616/3744) no-repeat   center center #505050;   
+  /*https://picsum.photos/id/1004/5616/3744*/
+  background: url(https://www.usnews.com/dims4/USNEWS/a528fc4/2147483647/thumbnail/970x647/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Ff7%2F4f%2F45b2459240c59cfa435d1923b00f%2Ffinance.jpg) no-repeat   center center #505050;   
   background-size: cover;
   box-shadow: 0px 30px 60px -5px #000;
 }
@@ -61,7 +64,7 @@ span {
   display: block;
   height: 15px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255);
   border: 2px solid rgba(255, 255, 255, 0);
   overflow: hidden;
   margin-top: 15px;
@@ -70,9 +73,9 @@ span {
 
 .text:focus {
   outline: 0;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255);
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0);
+  background: rgb(255, 255, 255);
 }
 
 .text:focus + span {
@@ -82,7 +85,7 @@ span {
 input[type="text"],
 input[type="password"] {
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -101,7 +104,7 @@ span,
 
 .custom-checkbox {
   -webkit-appearance: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255);
   padding: 8px;
   border-radius: 2px;
   display: inline-block;
@@ -134,7 +137,7 @@ label {
 
 .signin {
   background-color: #1161ed;
-  color: #FFF;
+  color: rgb(255, 255, 255);
   width: 100%;
   padding: 10px 20px;
   display: block;
@@ -150,6 +153,7 @@ label {
   background: #4082f5;
   box-shadow: 0px 4px 35px -5px #4082f5;
   cursor: pointer;
+  color: rgb(0, 0, 0);
 }
 
 .signin:focus {
@@ -168,5 +172,5 @@ a {
   top: 120px;
   position: relative;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgb(0, 0, 0);
 }

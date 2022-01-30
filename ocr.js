@@ -1,4 +1,4 @@
-const vision = require('@google-cloud/vision');
+
 
 function handleInputChange(event){
     var input_image = document.getElementById('input_image');
@@ -6,7 +6,8 @@ function handleInputChange(event){
     var input = input_image;
     var file = input.files[0];
     console.log(file);
-    Tesseract.recognize(file)
+    const worker = new Tesseract.TesseractWorker()
+    worker.recognize(file)
         .progress(function(message){
             document.getElementById('progressbar').value = message.progress;
             console.log(message);
@@ -41,17 +42,7 @@ function parseText(text) {
     return Math.max(...moneyArray)
 }
 
-async function setEndpoint() {
-    // Specifies the location of the api endpoint
-    const clientOptions = {apiEndpoint: 'eu-vision.googleapis.com'};
-  
-    // Creates a client
-    const client = new vision.ImageAnnotatorClient(clientOptions);
-  
-    // Performs text detection on the image file
-    const [result] = await client.textDetection('./resources/wakeupcat.jpg');
-    const labels = result.textAnnotations;
-    console.log('Text:');
-    labels.forEach(label => console.log(label.description));
-  }
-  setEndpoint();
+function getDate(text) {
+    const words = text.split(" ").join(",").split("\n").join(",").split(",");
+
+}

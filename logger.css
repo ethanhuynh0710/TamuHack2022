@@ -1,14 +1,14 @@
 /* 64ac15 */
 html,body,.container {
   width: 100%;
-  height: 100%;
+  height: 90%;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   /* color: #b9b9b9; */
   color: black;
-  background-color: #e3e3e3;
+  background-color: #5e7374;
 }
 
 .parent {
@@ -21,6 +21,18 @@ html,body,.container {
 *:after {
   box-sizing: border-box;
 } */
+
+textarea {
+  width: 50%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
 
 h4 {
   color: #f0a500;
@@ -78,7 +90,7 @@ input[type="radio"]:checked + label,
 input:checked + label:before,
 select:focus,
 select:active {
-  background-color: #f0a500;
+  background-color: #18b65f;
   color: #fff;
   border-color: #bd8200;
 }
@@ -130,7 +142,7 @@ select:active {
   outline: 0;
 }
 select option {
-  background-color: #f0a500;
+  background-color: rgb(16, 124, 65);
   color: #fff;
 }
 .input-group {
@@ -223,4 +235,21 @@ select option {
     width: 100%;
     padding-right: 0;
   }
+}
+
+.center-this{
+  width: 50%;
+}
+
+progress{
+  width: 90%;
+  height: 40px;
+}
+
+.file-submit-container{
+  margin-top: 10px;
+}
+
+.read-container{
+  margin-top: 10px;
 }
