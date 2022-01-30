@@ -4,6 +4,7 @@
     left:0;
     width: 100%;
     height: 100%;
+    font-family: "Roboto", sans-serif;
 }
 
 .sidebar .profile_image{
@@ -37,6 +38,7 @@
     padding-right: 10px;
 }
 label #sidebar_btn{
+    font-family: "Roboto", sans-serif;
     z-index:1;
     color:#fff;
     position:fixed;

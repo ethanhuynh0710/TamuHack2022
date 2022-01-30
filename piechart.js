@@ -10,6 +10,9 @@ function parseExpenses(allTransactions) {
     if(allTransactions.length!=0){
         allTransactions = allTransactions.substring(0, allTransactions.length-1);
     }
+    else{
+        return [];
+    }
         
     
     const fullList = allTransactions.split("+");
@@ -64,7 +67,7 @@ anychart.onDocumentReady(function() {
     chart.legend().itemsLayout("vertical");  
     
     // display the chart in the container
-    chart.container('container');
+    chart.container('piechart-container');
     chart.draw();
     
     });

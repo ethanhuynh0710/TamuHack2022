@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Receipt</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+            $('#header').load('../header.html'); 
+            $('#sidebarJank').load('../sidebarJank.html'); 
+        })
+    </script>
+    <link rel = "stylesheet" href = "../style.css">
+    <link rel = "stylesheet" href = "../logger.css">
+</head>
+<div id="header"></div>
+<div class="parent">
+    <div id="sidebarJank"></div>
+    <div class="yz-stuff container">
+        <form action = "http://localhost:5000/result" method = "POST">
+            <center><label for="input_image">Choose an Image of a Receipt:</label>
+            <input type="file" id="myfile" name="myfile">
+            <input type="submit" style="width: 598px;">
+         </form>
+     </div>    
+   </div>
+</html>
+

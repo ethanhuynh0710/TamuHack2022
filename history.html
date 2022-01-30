@@ -5,7 +5,7 @@
     <head>
         <meta charset = "utf-8">
         <title>FINC</title>
-        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "history.css">
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -17,6 +17,7 @@
                 $('#sidebarJank').load('sidebarJank.html'); 
             })
         </script>
+        <script type = "module" src = "history.js"></script>
     </head>
     <body>
         <div id="header"></div>
@@ -25,6 +26,25 @@
             <div class = "content child">
                 <div class = "summary-container">
                     <center><h3>Expenditure History</h3></center>
+                </div>
+                <div class="main-container container">
+                    <div class="sneaky-container">
+                        <div class="table-container">
+                            <table id = "expenditureHistory" class="dataTable table table-hover" width="100%" role="grid">
+                                <tbody class="headerNames">
+                                    <tr class="header-row">
+                                        <th class="date">Date</th>
+                                        <th class="type">Type</th>
+                                        <th class="price">Price</th>
+                                    </tr>
+                                </tbody>
+                                <tbody className="infoList">
+                                    <!--Here..-->
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

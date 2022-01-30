@@ -1,0 +1,31 @@
+ 
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script> 
+         $(function(){
+               $('#header').load('../header.html'); 
+               $('#sidebarJank').load('../sidebarJank.html'); 
+         })
+      </script>
+      <link rel = "stylesheet" href = "../style.css">
+   </head>
+   <body>
+      <div id="header"></div>
+      <div class="read-container">
+              
+         <!-- <textarea readonly id="image-text" placeholder="Receipt Text"></textarea>
+         <br/><br/> -->
+         
+         <textarea readonly id="name-text" placeholder="Name"></textarea>
+         <br/><br/>
+         
+         <textarea readonly id="total-text" placeholder="Price"></textarea>
+         <br/><br/>
+        
+         <textarea readonly id="date-text" placeholder="Date"></textarea>
+       </div>
+   </body>
+   
+</html>
